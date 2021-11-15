@@ -327,7 +327,7 @@ Please check your config."""
             A dictionary entry of format {'reader_method': reader_method}
 
         """
-        if path.endswith(".csv") or path.endswith(".tsv"):
+        if path.endswith(".csv") or path.endswith(".csv.gz") or path.endswith(".tsv"):
             return "csv"
         elif path.endswith(".parquet"):
             return "parquet"
